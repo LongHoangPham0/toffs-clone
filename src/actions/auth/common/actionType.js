@@ -1,0 +1,3 @@
+export const LOGIN_AUTH = "LOGIN_AUTH"
+export const LOGIN_AUTH_ERROR = "LOGIN_AUTH_ERROR";
+export const GET_ACCESS_TOKEN_OIDC = "GET_ACCESS_TOKEN_OIDC";

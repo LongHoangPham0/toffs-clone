@@ -1,0 +1,80 @@
+// @media (min-width: 992px) {
+//   .sidebar-lg-show.sidebar-fixed .main,
+//   html:not([dir="rtl"]) .sidebar-lg-show.sidebar-fixed .app-footer,
+//   html:not([dir="rtl"]) .sidebar-show.sidebar-fixed .main,
+//   html:not([dir="rtl"]) .sidebar-show.sidebar-fixed .app-footer {
+//     margin-left: 250px !important;
+//   }
+
+//   .sidebar.sidebar-fixed {
+//     width: 250px;
+//     height: calc(100vh - 55px);
+//     margin-top: 5px;
+//     margin-left: 0;
+//     top: unset;
+//     bottom: unset;
+//     z-index: unset;
+//   }
+// }
+
+// @media (max-width: 991.98px) {
+//   .sidebar {
+//     width: 250px;
+//   }
+//   .login-page {
+//     > div {
+//       margin-top: 85px !important;
+//     }
+//   }
+// }
+
+// @media (min-width: 768px) {
+
+//   html:not([dir="rtl"]) .sidebar-md-show.sidebar-fixed .main,
+//   html:not([dir="rtl"]) .sidebar-md-show.sidebar-fixed .app-footer,
+//   html:not([dir="rtl"]) .sidebar-show.sidebar-fixed .main,
+//   html:not([dir="rtl"]) .sidebar-show.sidebar-fixed .app-footer {
+//     margin-left: 250px !important;
+//   }
+//   .sidebar.sidebar-fixed {
+//     width: 250px;
+//     margin-top: 5px;
+//     height: calc(100vh - 55px);
+//     margin-left: 0;
+//     top: unset;
+//     bottom: unset;
+//     z-index: unset;
+//   }
+// }
+
+// .sidebar {
+//   .sidebar-nav {
+//     .nav-item {
+//       .nav-link {
+//         &:hover {
+//           background-color: #20a8d8;
+//           color: #fff;
+//         }
+//         font-size: 12px;
+//         font-weight: 100;
+//       }
+//     }
+//   }
+// }
+.sidebar-brand {
+  background-color: #e4e5e6;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 2px;
+    background: linear-gradient(90deg, #1abc9c 1%, #2ecc71 1%, #2ecc71 21%, #3498db 21%, #3498db 24%, #9b59b6 24%, #9b59b6 35%, #34495e 35%, #34495e 48%, #f1c40f 48%, #f1c40f 62%, #e67e22 62%, #e67e22 65%, #e74c3c 65%, #e74c3c 83%, #886A08 83%, #886A08 100%, #95a5a6 100%);
+    background-size: 260px;
+  }
+}
+.sidebar-nav {
+  margin-top: 1px;
+}

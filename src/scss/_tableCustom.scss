@@ -1,0 +1,243 @@
+table.table>caption+thead>tr:first-child>th,
+table.table>colgroup+thead>tr:first-child>th,
+table.table>thead:first-child>tr:first-child>th,
+table.table>caption+thead>tr:first-child>td,
+table.table>colgroup+thead>tr:first-child>td,
+table.table>thead:first-child>tr:first-child>td {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+  background: #ddd;
+  border-right: 0.5px solid #f3f3f3;
+}
+table.table.table-dns>caption+thead>tr:first-child>th,
+table.table.table-dns>colgroup+thead>tr:first-child>th,
+table.table.table-dns>thead:first-child>tr:first-child>th,
+table.table.table-dns>caption+thead>tr:first-child>td,
+table.table.table-dns>colgroup+thead>tr:first-child>td,
+table.table.table-dns>thead:first-child>tr:first-child>td {
+  // border-top: 0;
+  border-right: 0;
+  background: none;
+  text-align: left;
+  padding: 8px;
+  border-color: #e2e2e2;
+  font-size: 14px;
+}
+
+.table-dns {
+  background-color: #efefef;
+  .action {
+    width: 30px;
+  }
+}
+
+.no-record {
+  border: 1px solid #ddd;
+  border-top: none;
+  margin-top: -16px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.table-bordered>thead>tr>th,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>tbody>tr>td,
+.table-bordered>tfoot>tr>td {
+  border: 1px solid #ddd;
+  font-size: 12px;
+  background: #fff;
+}
+
+@media only screen and (max-width: 450px) {
+  //show cols here
+  td.collapsable {
+    display: none;
+  }
+
+  th.collapsable {
+    display: none;
+  }
+}
+
+/*table*/
+.table-bordered>tbody>tr.origin-status-false>td {
+  background-color: rgba(238, 99, 99, 1);
+  color: #fff;
+}
+
+.table-bordered>tbody>tr.origin-status-true>td {
+  background-color: #4dbd74;
+  color: #fff;
+}
+
+.table-bordered>tbody>tr>td.tbl-title {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.table.table-bordered {
+  text-align: center;
+}
+
+.table-scroll {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.break-2-col {
+  column-count: 2;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+}
+
+table.table th.control_title {
+  width: 55px;
+}
+
+i.fas.fa-sort:after {
+  right: 0.5em;
+  content: "\2193";
+}
+
+i.fas.fa-sort:before {
+  right: 1em;
+  content: "\2191";
+}
+
+#pageNavPosition>.pg-normal {
+  position: relative;
+  display: inline-grid;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #20a8d8;
+  background-color: #fff;
+  border: 1px solid #c8ced3;
+  width: 36px;
+  cursor: pointer;
+}
+
+#pageNavPosition>.pg-selected {
+  z-index: 1;
+  color: #fff;
+  background-color: #20a8d8;
+  border-color: #20a8d8;
+}
+
+.max-width-500 {
+  max-width: 500px;
+}
+
+.warp-text{
+  word-break: break-all;
+}
+
+table.table>:not(:first-child) {
+  border-top: 0;
+}
+
+.btn.active-item {
+  background-color: #C3C3C3;
+  border-color: #CCC;
+}
+
+.table-resize {
+  border-spacing: 0;
+  .thead {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .tr {
+    &:last-child {
+      .td {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .th {
+    background: #ddd;
+    border-right: 0.5px solid #f3f3f3;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    min-height: 30px;
+  }
+
+  .td {
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    line-height: 30px;
+    min-height: 40px;
+  }
+
+  .th, .td {
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block !important;
+   
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+.waterfall-ssl {
+  bottom: 0px;
+  left: -3px;
+}
+.popover-waterfall {
+  min-width: 450px;
+  .title {
+    width: 100px;
+    font-size: 12px;
+    height: 30px;
+  }
+  .time {
+    width: 100px;
+    font-size: 12px;
+  }
+}
+
+.resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: col-resize;
+  user-select: none;
+  touch-action: none;
+}
+
+.resizer.isResizing {
+  background: #20a8d8;
+  opacity: 1;
+}
+
+@media (hover: hover) {
+  .resizer {
+    opacity: 0;
+  }
+
+  *:hover > .resizer {
+    opacity: 1;
+  }
+}

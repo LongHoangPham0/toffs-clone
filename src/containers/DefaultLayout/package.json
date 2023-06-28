@@ -1,0 +1,6 @@
+{
+  "name": "DefaultApp",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./DefaultApp.js"
+}

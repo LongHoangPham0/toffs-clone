@@ -1,0 +1,118 @@
+.bg-login {
+    background-size:  cover;
+    background-color: #ffffff;
+    overflow-x: hidden;
+
+    .login-content {
+        border: none;
+    }
+
+    .form-control {
+        border-radius: 0;
+    }
+    .input-group-text {
+        border-radius: 0;
+    }
+
+    input.error-login {
+        border-color: #f86c6b;
+    }
+
+    label.error-login {
+        position: absolute;
+        bottom: -18px;
+        margin-bottom: 0;
+    }
+
+    .error-login {
+        color: #f86c6b;
+        font-size: 12px;
+    }
+
+    .error {
+        color: #f86c6b;
+    }
+}
+
+.login-page {
+  .login-separate-singpass {
+    position: relative;
+    line-height: 313px;
+    &:before {
+        content: " ";
+        border-width: 1px;
+        border-color: #747474;
+        position: absolute;
+        height: 46%;
+        border-style: double;
+        left: 50%;
+        top: 0;
+    }
+    &:after {
+        content: " ";
+        border-width: 1px;
+        border-color: #747474;
+        position: absolute;
+        height: 46%;
+        border-style: double;
+        padding: 0;
+        left: 50%;
+        top: 54%
+    }
+  }
+
+  .input-group {
+    .form-control, .input-group-text {
+      border: 1px solid #e4e7ea;
+    }
+    .input-group-text {
+      background-color: #f0f3f5;
+    }
+    .input-group-prepend {
+      .input-group-text {
+        height: 100%;
+      }
+    }
+  }
+}
+.tab-login.nav-tabs {
+  .nav-link {
+    color: $color-text;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    isolation: isolate;
+    &.active {
+      color: $color-main;
+      border-bottom: 2px solid $color-main;
+    }
+  }
+}
+.tab-vkey {
+  min-height: 388px;
+  width: 100%;
+  .btn-vkey {
+    background-color: #fff;
+    // color: #fff;
+  }
+  .logo-vkey {
+    width: 30px;
+  }
+}
+
+.callback-page {
+  height: 100vh;
+  .content-callback {
+    width: 400px;
+    img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: 14px;
+    }
+    .content {
+      font-size: 12px;
+    }
+  }
+}

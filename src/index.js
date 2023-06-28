@@ -5,7 +5,7 @@ import './polyfill'
 import React from 'react';
 import ReactDOM from "react-dom/client";
 import * as serviceWorker from './serviceWorker';
-// import "./scss/style.scss";
+import "./scss/style.scss";
 import { lazyWithRetry } from './Utils/LazyLoad';
 
 const App = lazyWithRetry(() => import('./App'));
