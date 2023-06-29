@@ -1,7 +1,9 @@
 import { loginAuthReducer } from "../authReducer"
+import { listOIDCPublicReducer } from "../oidcReducer"
 
 const ReducerAuth = {
-  loginAuthReducer
+  loginAuthReducer,
+  listOIDCPublicReducer
 }
 
 export default ReducerAuth

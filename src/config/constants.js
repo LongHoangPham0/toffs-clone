@@ -1,6 +1,14 @@
 
 export const DEFAULT_URL = window.location.origin;
 
+const dataList = {
+  data: [],
+  isLoading: false,
+  error: null
+}
+
+export const dataTablePagination = {...dataList, totalRecords: 0}
+
 export const dataOneItem = {
   data: null,
   isLoading: false,
@@ -19,3 +27,7 @@ export const ServiceData = {
   ssl: "ssl"
 }
 
+export const OIDC = {
+  singpass: "Singpass",
+  vkey: "V-Key"
+}

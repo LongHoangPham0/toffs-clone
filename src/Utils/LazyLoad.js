@@ -9,7 +9,7 @@ export const lazyWithRetry = (componentImport) => lazy(async () => {
         const component = await componentImport()
 
         window.localStorage.setItem("page-has-already-been-force-refreshed", "false")
-        
+
         return component
     } catch(error) {
         console.log("page cache")

@@ -73,3 +73,25 @@ const SpinButtonComponent = forwardRef((props, ref) => {
     </>
   )
 })
+
+SpinButtonComponent.propTypes = {
+  type: PropTypes.string.isRequired,
+  btnClassName: PropTypes.string,
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  icon: PropTypes.element,
+  onClickButton: PropTypes.func,
+  disabled: PropTypes.bool.isRequired
+}
+
+SpinButtonComponent.defaultProps = {
+  type: "button",
+  btnClassName: "btn btn-primary fw-bold text-capitalize d-flex align-items-center",
+  title: "",
+  icon: undefined,
+  disabled: null,
+  defaultLoadingClick: true,
+  isSpin: null
+}
+
+export default SpinButtonComponent
