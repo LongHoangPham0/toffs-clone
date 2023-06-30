@@ -23,7 +23,9 @@ import { whiteLabelSelector } from "../../../../selectors/c4/whiteLabelSelector"
 const LoginComponent = () => {
   const listOidc = useSelector(listOIDCPublicSelector);
   const error = useSelector(loginAuthSelector);
-  const whiteLabel = useSelector(whiteLabelSelector);
+  console.log(error)
+  const whiteLabel = useSelector(whiteLabelSelector)
+  // console.log(whiteLabel)
   const {t, i18n} = useTranslation();
   const dispatch = useDispatch();
   const location = useLocation();
@@ -34,7 +36,6 @@ const LoginComponent = () => {
   const dataLanguages = DataLanguages();
   const btnRef = useRef();
   const [activeTab, setActiveTab] = useState('singpass');
-  console.log(listOidc.data)
   const toggle = tab => {
     if(activeTab !== tab) setActiveTab(tab);
   }

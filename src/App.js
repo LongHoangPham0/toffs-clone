@@ -23,7 +23,7 @@ const App = () => {
           <Router history={history}>
             <RouterProvider>
               <Switch>
-                <Route exact path="/oauth/:oicd/callback" render={() => <RedirectOIDC />} />
+                <Route exact path="/oauth/:oidc/callback" render={() => <RedirectOIDC />} />
                 <Route exact path={`${baseLocale}/*`} render={() => <Language />} />
                 <Redirect to={`${language}`} />
               </Switch>

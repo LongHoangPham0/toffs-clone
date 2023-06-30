@@ -4,11 +4,14 @@ import * as OIDCAuth from '../../apis/auth/oidc'
 
 function* loginAuth(action) {
   try {
-    const data = yield OIDCAuth.getListOIDCPublic()
+    const data = yield OIDCAuth.getListOIDCPublic();
+    console.log(OIDCAuth.getListOIDCPublic())
+
     yield put({
       type: GET_LIST_OIDC_PUBLIC_SUCCESS,
       data: data.data
     })
+    console.log(data)
   } catch (error) {
     yield put({
       type: GET_LIST_OIDC_PUBLIC_ERROR,
